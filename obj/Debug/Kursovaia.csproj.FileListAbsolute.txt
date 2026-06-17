@@ -1,0 +1,15 @@
+C:\Users\Kubur\source\repos\Kursovaia\Kursovaia\obj\Debug\Kursovaia.csproj.AssemblyReference.cache
+C:\Users\Kubur\source\repos\Kursovaia\Kursovaia\obj\Debug\App.baml
+C:\Users\Kubur\source\repos\Kursovaia\Kursovaia\obj\Debug\AddOrder.g.cs
+C:\Users\Kubur\source\repos\Kursovaia\Kursovaia\obj\Debug\AddRestaurant.g.cs
+C:\Users\Kubur\source\repos\Kursovaia\Kursovaia\obj\Debug\AddUser.g.cs
+C:\Users\Kubur\source\repos\Kursovaia\Kursovaia\obj\Debug\App.g.cs
+C:\Users\Kubur\source\repos\Kursovaia\Kursovaia\obj\Debug\DeleteOrder.g.cs
+C:\Users\Kubur\source\repos\Kursovaia\Kursovaia\obj\Debug\DeleteRestaurant.g.cs
+C:\Users\Kubur\source\repos\Kursovaia\Kursovaia\obj\Debug\DeleteUser.g.cs
+C:\Users\Kubur\source\repos\Kursovaia\Kursovaia\obj\Debug\Restaurant.g.cs
+C:\Users\Kubur\source\repos\Kursovaia\Kursovaia\obj\Debug\MainWindow.g.cs
+C:\Users\Kubur\source\repos\Kursovaia\Kursovaia\obj\Debug\Order.g.cs
+C:\Users\Kubur\source\repos\Kursovaia\Kursovaia\obj\Debug\User.g.cs
+C:\Users\Kubur\source\repos\Kursovaia\Kursovaia\obj\Debug\Kursovaia_MarkupCompile.cache
+C:\Users\Kubur\source\repos\Kursovaia\Kursovaia\obj\Debug\Kursovaia_MarkupCompile.lref

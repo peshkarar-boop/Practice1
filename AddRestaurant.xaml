@@ -1,0 +1,58 @@
+﻿<Window x:Class="Kursovaia.AddRestaurant"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kursovaia"
+        mc:Ignorable="d"
+        Title="AddRestaurant" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Border
+         Grid.Row="0" 
+         Background="#f4a61f"
+         Height="100">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" 
+                    HorizontalAlignment="Center">
+                <TextBlock Text="Добавление ресторана:" 
+                           Foreground="#303236"
+                           VerticalAlignment="Bottom" 
+                           HorizontalAlignment="Center"
+                           FontSize="30"
+                           FontWeight="Bold"/>
+            </StackPanel>
+        </Border>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <Label Content="Название ресторана:" HorizontalAlignment="Center"/>
+                <TextBox x:Name="NameTextBox" HorizontalAlignment="Center" Width="200"/>
+
+                <Label Content="Адрес:" HorizontalAlignment="Center"/>
+                <TextBox x:Name="AddressTextBox" HorizontalAlignment="Center" Width="200"/>
+
+                <Label Content="Телефон:" HorizontalAlignment="Center"/>
+                <TextBox x:Name="PhoneTextBox" HorizontalAlignment="Center" Width="200"/>
+            </StackPanel>
+        </ScrollViewer>
+
+
+        <Border Grid.Row="2" Background="#303236">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                <Button Content="Отмена" Foreground="#303236"
+                    Background="#f4a61f" Width="100" Height="45"
+                        Click="Cancell_Click"/>
+
+                <Button Content="Сохранить" Foreground="#303236"
+                    Background="#f4a61f" Width="100" Height="45"
+                        Click="Save_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
