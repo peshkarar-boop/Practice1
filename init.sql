@@ -1,0 +1,13 @@
+USE Delivery;
+
+Create table Restaurant(ID_Restaurant int IDENTITY(1,1) NOT NULL,Name nvarchar(25) NOT NULL,Address nvarchar(50) NOT NULL,Phone varchar (25),Primary key(ID_Restaurant));
+
+Create table [User](ID_user int IDENTITY(1,1) NOT NULL,Surname nvarchar(25) NOT NULL,First_name nvarchar(25) NOT NULL,Middle_name nvarchar(25) NOT NULL,Phone varchar(50) NOT NULL,Address nvarchar (50),Primary key(ID_User));
+
+Create table Order2(ID_Order int IDENTITY (1,1) NOT NULL,ID_User int NOT NULL,ID_Restaurant int NOT NULL,Order_date datetime NOT NULL,IS_Delivery nvarchar (50) NOT NULL,Delivery_address nvarchar (50) NOT NULL,TotalPrice int NOT NULL,Status nvarchar (50) NOT NULL,Primary key(ID_order),Foreign key (ID_User) references [User](ID_User),Foreign key (ID_Restaurant) references Restaurant(ID_Restaurant));
+
+Insert into [User] (Surname,First_name, Middle_name,Phone,Address) VALUES ('Дмитриенко','Иван','Петрович','89111234567','Ул. Тверская, д. 10, кв. 65'),('Сергеевна','Анна','Сидорова','89227654321','Ул. Арбат, д. 10, кв. 89'),('Иванов','Иван','Иванович','89031234567','Ул. Ленина, д. 1, кв. 7'),('Петрова','Екатерина','Алексеевна','89159876543','Ул. Баумана, д. 2, кв. 35'),('Козлов','Дмитрий','Владимирович','89218806645','Ул. Красная, д. 5, кв. 78'),('Морозова','Ольга','Павловна','89218455586', NULL),('Соколов','Андрей','Николаевич','89215506694', NULL);
+
+Insert into Restaurant (Name, Address, Phone) VALUES('ПиццаМания','Ул. Тверская, д. 10','89217704567'),('СушиФест','Ул. Арбат, д. 8','84455677123'),('БургерКинг','Ул. Ленинград, д. 15','84235674321'),('ПиццаФест','Ул. Новый Арбат, д. 7','89354216789'),('ДодоПицца','Ул. Тверская-Ямская, д. 3','89431234567'),('Вкусно и точка','Ул. Пятницкая, д. 12','89657654321'),('Сушимания','Ул. Воздвиженка, д. 9','84321987654'),('ВсеДома','Наб. Чёрной речки, д. 4','89218805324');
+
+Insert INTO Order2 (ID_User, ID_Restaurant, Order_date, IS_Delivery, Delivery_address, TotalPrice, Status) VALUES (1,2,'2025-06-01 12:15:00','Доставка','Ул. Тверская, д. 10, кв. 65', 1150, 'Выполнен'),(2,1,'2025-06-01 13:30:00','Самовывоз','Ул. Тверская, д. 10', 650, 'Отменён'),(3,3,'2025-06-01 18:00:00','Доставка','Ул. Ленина, д. 1, кв. 7', 780, 'В пути'),(4,3,'2025-06-01 17:45:00','Самовывоз','Ул. Ленинград, д. 15', 580, 'Выполнен'),(5,4,'2025-06-01 12:20:00','Доставка','Ул. Красная, д. 5, кв. 78', 720, 'В пути'),(6,7,'2025-06-01 14:00:00','Самовывоз','Ул. Воздвиженка, д. 9', 850, 'Выполнен'),(7,6,'2025-06-01 18:35:00','Самовывоз','Ул. Пятницкая, д. 12',550, 'Отменён');

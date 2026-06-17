@@ -1,0 +1,13 @@
+version:"3.8"
+
+services:
+db:
+image: mcr.microsoft.com/mssql/server
+container_name:sqlserver
+environment:
+ACCEPT_EULA: "Y"
+SA_PASSWORD: "YorStrong@password"
+ports:
+- "1433:1433"
+Volumes:
+- ./init.sql:/init.sql
